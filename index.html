@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular2 Playground</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+
+<body>
+    <app-component>Loading...</app-component>
+</body>
+
+<!-- TS-related imports -->
+<script src="/node_modules/systemjs/dist/system.js"></script>
+<script src="/node_modules/typescript/lib/typescript.js"></script>
+<script>
+    System.config({
+        transpiler: 'typescript',
+        defaultJSExtensions: false,
+        typescriptOptions: {
+            emitDecoratorMetadata: true,
+            experimentalDecorators: true
+        }
+    });
+</script>
+
+<!-- Angular-related imports -->
+<script src="/node_modules/rxjs/bundles/Rx.js"></script>
+<script src="/node_modules/angular2/bundles/angular2-polyfills.js"></script>
+<script src="/node_modules/angular2/bundles/angular2.min.js"></script>
+<script src="/node_modules/angular2/bundles/http.min.js"></script>
+<script src="/node_modules/angular2/bundles/router.min.js"></script>
+<script>
+    //bootstrap the Angular2 application
+    System.import('src/bootstrap.ts').catch(console.log.bind(console));
+</script>
+
+</html>
