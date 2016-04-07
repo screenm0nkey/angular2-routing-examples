@@ -1,9 +1,7 @@
-# A collection of Angular2 examples
+# Angular2 Routing Examples
 
-Very basic setup for playing with Angular2 and RxJs. Compiles TS files on the fly. No need for gulp, grunt, webpack etc  
+## Please see my other "Angular2 Examples" repo for a more miscellaneous collection of angular2 examples
 
-Just run live-server or http-server from the root or type "npm start"   
-
-Please note, these examples were created whilst I was learning Angular2, which I now use as a resource.  
-
-Even though I've created all the examples, the logic in them has been borrowed from other repos or blogs :) 
+Routing examples using Angular2 router. 
+compiles TS files on the fly. no need for gulp, grunt, webpack etc
+just run live-server or http-server from the root or type "npm start"
