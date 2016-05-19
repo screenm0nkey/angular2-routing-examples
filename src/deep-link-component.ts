@@ -1,5 +1,5 @@
 import {Component} from 'angular2/core';
-import {ROUTER_DIRECTIVES, RouteConfig, Route, RouteParams, Location} from 'angular2/router';
+import {ROUTER_DIRECTIVES, RouteConfig, RouteParams, Location} from 'angular2/router';
 
 
 // Nested Component
@@ -14,8 +14,6 @@ class NestedComponent {
         this.routeParams = params.get('id');
     }
 }
-
-
 
 @Component({
     selector: 'deep-link-component',
@@ -36,9 +34,6 @@ export class DeepLinkComponent {
 
     constructor(location:Location) {
         this.location = location;
-    }
-    getLinkStyle(path) {
-        return this.location.path().indexOf(path) > -1;
     }
 }
 
