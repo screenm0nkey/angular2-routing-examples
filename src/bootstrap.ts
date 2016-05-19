@@ -118,7 +118,7 @@ export class ContactUsComponent {
 ])
 class RootComponent {
     location:Location;
-    querystringval:string = 'lowman';
+    querystringval:string = 'lowmanz';
 
     constructor(location:Location) {
         this.location = location;
